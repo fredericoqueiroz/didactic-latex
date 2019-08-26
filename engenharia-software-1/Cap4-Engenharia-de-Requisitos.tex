@@ -1,0 +1,72 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage[top=3cm, left=2.5cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{amsthm,amsfonts}
+\setlength\parindent{0pt}
+
+\author{Frederico Queiroz}
+\title{Resumo Capítulo 4 - Engenharia de Requisitos}
+
+\begin{document}
+\maketitle
+
+\section{O que são requisitos?}
+\begin{itemize}
+    \item \textbf{Requisitos} de um sistema são as descrições do que o sistema deve fazer, os serviços que oferece e as restrições a seu funcionamento.
+    \item \textbf{Engenharia de Requisitos} é o processo de descobrir, analisar, documentar e verificar esses serviços e restrições. 
+\end{itemize}
+
+\section{Visões da Especificação}
+\begin{itemize}
+    \item Alguns dos problemas que surgem durante o processo de engenharia de requisitos são as falhas em não fazer uma separação entre diferentes níveis de descrição.
+    \item Diferentes visões da especificação são úteis, pois comunicam informações sobre o sistema para diferentes tipos de leitor (stakeholders).
+\end{itemize}
+
+\subsection{Requisitos de Usuário}
+\begin{itemize}
+    \item \textbf{Requisitos de usuário} são declarações, em uma linguagem natural com diagramas, de quais serviços o sistema deverá fornecer a seus usuários
+    e as restrições com as quais este deve operar.
+    \item Os leitores dos requisitos de usuário não costumam se preocupar com a forma como o sistema será implementado.
+    \item Descreve as funções e restrições do sistema de forma abstrata (inteligível pelo usuário/cliente).
+    \item Ponto de vista das necessidades da empresa cliente. Não indica uma solução, e sim a necessidade.
+    \item Escrito em linguagem natural com diagramas simples (Ex. tabelas).
+\end{itemize}
+\subsubsection{Linguagem Natural}
+\begin{itemize}
+    \item Não é fácil padronizar os requisitos usando linguagem natural.
+    \item Alguns problemas:
+    \begin{itemize}
+        \item Falta de clareza: A linguagem natural pode ser imprecisa, vaga e ambígua. Seu significado depende do conhecimento do leitor.
+        \item Confusão de requisitos: Requisitos podem se misturar com informações do projeto.
+        \item Fusão de requisitos: Diversos requisitos expressos juntos.
+    \end{itemize}
+    \item Diretrizes Gerais de Redação:
+    \begin{itemize}
+        \item Adotar um formato padrão e usá-lo em todas as definições de requisitos.
+        \item Usar a linguagem de forma simples e consistente para distinguir entre requisitos obrigatórios e os desejáveis.
+        \begin{itemize}
+            \item Requisitos obrigatórios são requisitos que o sistema tem de dar suporte. Geralmente escrito usando-se `deve'.
+            \item Requisitos desejáveis não são essenciais. Geralmente escrito usando-se `pode'.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{Requisitos de Sistema}
+\begin{itemize}
+    \item \textbf{Requisitos de Sistema} são descrições mais detalhadas das funções, serviços e restrições operacionais do sistema.
+    \item Os leitores dos requisitos de sistemas precisam saber mais detalhadamente o que o sistema fará, porque estão interessados em como ele apoiará
+    os processos dos negocios ou porque esstão envolvidos na implementação do sistema.
+    \item Devem ser padronizados, completos e consistentes. 
+    \item O documento de requisitos do sistema (usado pela equipe de desenvolvimento) deve definir exatamente o que deve ser implementado. 
+    \item Pode ser parte do contrato entre o comprador do sistema e os desenvolvedores de software.
+\end{itemize}
+
+\subsection{Especificação de Requisitos}
+\begin{itemize}
+    \item \textbf{Especificação de Requisitos} é o proceso de escrever os requisitos de \textbf{usuário} e de \textbf{sistema} em um \textbf{documento de requisitos}.
+\end{itemize}
+
+%\today
+\end{document}
