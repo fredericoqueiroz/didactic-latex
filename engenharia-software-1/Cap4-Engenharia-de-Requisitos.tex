@@ -32,8 +32,44 @@
     \item Descreve as funções e restrições do sistema de forma abstrata (inteligível pelo usuário/cliente).
     \item Ponto de vista das necessidades da empresa cliente. Não indica uma solução, e sim a necessidade.
     \item Escrito em linguagem natural com diagramas simples (Ex. tabelas).
+	\item Não deve usar jargão de software, notações estruturadas ou notações formais. 
 \end{itemize}
-\subsubsection{Linguagem Natural}
+
+\subsection{Requisitos de Sistema}
+\begin{itemize}
+    \item \textbf{Requisitos de Sistema} são descrições mais detalhadas das funções, serviços e restrições operacionais do sistema.
+    \item Os leitores dos requisitos de sistemas precisam saber mais detalhadamente o que o sistema fará, porque estão interessados em como ele apoiará
+    os processos dos negocios ou porque esstão envolvidos na implementação do sistema.
+    \item Devem ser padronizados, completos e consistentes. 
+    \item O documento de requisitos do sistema (usado pela equipe de desenvolvimento) deve definir exatamente o que deve ser implementado. 
+    \item Pode ser parte do contrato entre o comprador do sistema e os desenvolvedores de software.
+	\item São usados por engenheiros de software como ponto de partida para o projeto do sistema.
+\end{itemize}
+
+\section{Especificação de Requisitos}
+\begin{itemize}
+    \item \textbf{Especificação de Requisitos} é o proceso de escrever os requisitos de \textbf{usuário} e de \textbf{sistema} em um \textbf{documento de requisitos}.
+	\item O documento de requisitos não deve incluir detalhes da arquitetura ou projeto do sistema.
+	\item Idealmente, os requisitos devem ser claros, inequívocos, de fácil compreensão, completos e consistentes.
+	\item Na prática, isso é dificil de se conseguir, pois os \textit{stakeholders} interpretam os requisitos de maneiras diferentes.
+	\item Muitas vezes, notam-se conflitos e inconsistências inerentes aos requisitos.
+\end{itemize}
+
+\subsection{Requisitos \textbf{X} Projeto}
+\begin{itemize}
+	\item Requisitos definem \textbf{o que} o sistema faz. Nem sempre dizem \textbf{como} ele faz (projeto).
+	\item Os requisitos do sistema devem descrever apenas o comportamento externo do sistema e suas restrições operacionais.
+	\item Eles não devem se preocupar com a forma como o sistema deve ser projetado ou implementado.
+	\item No entanto, durante a escrita dos requisitos é praticamente impossível eliminar todas as informações de projeto, pelas seguintes razões:
+	\begin{itemize}
+		\item Projetar uma arquitetura inicial do sistema pode ajudar a estruturar a especificação de requisitos. Os requisitos são organizados de acordo com 
+		os diferentes subsistemas que compõem o sistema.
+		\item O sistema deve interoperar com outros sistemas existentes, que restringem o projeto e impõem requisitos sobre o novo sistema.
+		\item O uso de uma arquitetura específica pode ser um requisito externo do sistema.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Especificação em Linguagem Natural}
 \begin{itemize}
     \item Não é fácil padronizar os requisitos usando linguagem natural.
     \item Alguns problemas:
@@ -50,22 +86,98 @@
             \item Requisitos obrigatórios são requisitos que o sistema tem de dar suporte. Geralmente escrito usando-se `deve'.
             \item Requisitos desejáveis não são essenciais. Geralmente escrito usando-se `pode'.
         \end{itemize}
+		\item Usar destaque (negrito, itálico, sublinhado) para partes importantes.
+		\item Evitar usar jargões de informática, siglas e acrônimos em requisitos de usuário.
     \end{itemize}
 \end{itemize}
 
-\subsection{Requisitos de Sistema}
+\subsection{Especificação em Linguagem Estruturada}
 \begin{itemize}
-    \item \textbf{Requisitos de Sistema} são descrições mais detalhadas das funções, serviços e restrições operacionais do sistema.
-    \item Os leitores dos requisitos de sistemas precisam saber mais detalhadamente o que o sistema fará, porque estão interessados em como ele apoiará
-    os processos dos negocios ou porque esstão envolvidos na implementação do sistema.
-    \item Devem ser padronizados, completos e consistentes. 
-    \item O documento de requisitos do sistema (usado pela equipe de desenvolvimento) deve definir exatamente o que deve ser implementado. 
-    \item Pode ser parte do contrato entre o comprador do sistema e os desenvolvedores de software.
+	\item A \textbf{Linguagem Natural Estruturada} é um forma restrita de escrever os \textbf{requisitos do sistema}. Todos os requisitos são 
+	escritos de em uma forma-padrão.
+	\item Notações de linguagem estruturada usam templates para especificar os requisitos do sistema.
+	\item Vantagens:
+	\begin{itemize}
+		\item Mantém a facilidade de expressão e compreensão da linguagem natural.
+		\item Garante algum grau de uniformidade na especificação.
+		\item Podem ser escritos formulários especiais.
+	\end{itemize}
 \end{itemize}
 
-\subsection{Especificação de Requisitos}
+\section{Requisitos Funcionais e Não Funcionais}
 \begin{itemize}
-    \item \textbf{Especificação de Requisitos} é o proceso de escrever os requisitos de \textbf{usuário} e de \textbf{sistema} em um \textbf{documento de requisitos}.
+	\item Os requisitos de software são frequentemente classificados como \textbf{requisitos funcionais} e \textbf{requisitos não funcionais}.
+\end{itemize}
+
+\subsection{Requisitos Funcionais}
+\begin{itemize}
+	\item Descrevem explicitamente as funcionalidades e serviços do sistema.
+	\item Documenta:
+	\begin{itemize}
+		\item Como o sistema deve reagir a entradas específicas.
+		\item Como o sistema deve se comportar em determinadas situações.
+		\item Em alguns casos, podem explicitar o que o sistema \underline{não} deve fazer.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Atributos dos Requisitos Funcionais}
+\begin{itemize}
+	\item A especificação dos requisitos funcionais de um sistema deve ser \textbf{completa} e \textbf{consistente}.
+	\item \textbf{Completude}: Todos os serviços requeridos pelo usuário devem estar definidos.
+	\item \textbf{Consistência}: Os requisitos não devem ter definições contraditórias.
+	\item Na prática, é quase impossível atingir completude e consistência dos requisitos.
+\end{itemize}
+
+\subsubsection{Exemplos de Requisitos Funcionais}
+\begin{itemize}
+	\item O usuário \underline{pode} pesquisar todo ou um sub-conjunto do banco de dados.
+	\item O sistema \underline{deve} oferecer telas apropriadas para o usuário ler documentos armazenados.
+	\item Cada pedido \underline{deve} ser associado a um identificador único (PID), o qual o usuário pode copiar para a área de armazenamento permanente da conta.
+\end{itemize}
+
+\subsection{Requisitos Não Funcionais (RNF)}
+\begin{itemize}
+	\item Definem propriedades e restrições do sistema (Ex. segurança, desempenho, espaço em disco).
+	\item Não estão diretamente relacionados com os serviços específicos oferecidos pelo sistema a seus usuários.
+	\item Podem estar relacionados às propriedades emergentes do sistema, como confiabilidade, tempo de resposta e ocupação de área.
+	\item Requisitos não funcionais são frequentemente mais críticos que requisitos funcionais individuais (Se não satisfaz, o sistema é inútil).
+\end{itemize}
+
+\subsubsection{Classificação de Requisitos Não Funcionais}
+\begin{itemize}
+	\item os requisitos não funcionais podem ser provenientes das características requeridas para o software (requisitos de produto),
+	da organização que desenvolve o software (requisitos organizacionais) ou de fontes externas.
+	\item \textbf{Requisitos do Produto}: Especificam ou restringem o comportamento do software (Ex.: desempenho, quantidade de memória, usabilidade, confiabilidade).
+	\item \textbf{Requisitos Organizacionais}: Derivados das políticas e procedimentos da organização do cliente e do desenvolvedor 
+	(Ex.: linguagem de programação, padrões do cliente).
+	\item \textbf{Requisitos Externos}: Derivados do ambiente ou dos fatores externos ao sistema e seu processo de desenvolvimento (Ex.: requisitos legais, éticos).
+\end{itemize}
+
+\subsubsection{Exemplos de Requisitos Não Funcionais}
+\begin{itemize}
+	\item Requisitos do Produto: A interface do usuário deve ser implementada como simples HTML.
+	\item Requisitos Organizacionais: Todos os documentos entregues devem seguir o padrão de relatórios XYZ-00.
+	\item Requisitos Externos: Informações pessoais dos usuários não podem ser vistas pelos operadores do sistema.
+\end{itemize}
+
+% [INSERIR IMAGEM DO DIAGRAMA DE RNF]
+
+\subsubsection{Verificação de Requisitos Não Funcionais}
+\begin{itemize}
+	\item RNF às vezes são difíceis de serem verificados.
+	\item Sempre que possível, os requisitos não funcionais devem ser escritos quantitativamente, para que possam ser objetivamente testados.
+	\item Na prática, os clientes de um sistema geralmente consideram difícil traduzir suas metas em requisitos mensuráveis.
+\end{itemize}
+
+\subsubsection{Métricas de Requisitos Não Funcionais}
+% [INSERIR TABELA 4.1 - Métricas para especificar requisitos não funcionais.]
+
+
+\subsubsection{Alguns Problemas de Requisitos Não Funcionais}
+\begin{itemize}
+	\item A especificação quantitativa de requisitos não funcionais é difícil.
+	\item Ocorre mistura de requisitos funcionais e não funcionais.
+	\item Requisitos não funcionais podem conflitar com outros requisitos (funcionais ou não).
 \end{itemize}
 
 %\today
