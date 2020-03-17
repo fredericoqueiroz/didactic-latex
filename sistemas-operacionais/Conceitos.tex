@@ -1,0 +1,42 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage[top=3cm, left=2.5cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{amsthm,amsfonts}
+\setlength\parindent{0pt}
+
+\author{Frederico Queiroz}
+\title{Conceitos e Definições}
+
+\begin{document}
+\maketitle
+
+\section{Estruturas}
+
+\subsection{Sistemas Multiprocessados (multiprocessadores)}
+\begin{itemize}
+    \item Sistemas com múltiplas CPUs próximas.
+    \item Sistemas paralelos ou fortemente acoplados
+    \begin{itemize}
+        \item Processadores compartilham memória e clock
+        \item Comunicação entre CPUs pela memória
+    \end{itemize}
+    \item Vantagens:
+    \begin{itemize}
+        \item Aumento de desempenho(throughput)
+        \item Economia de escala
+        \item Aumento da confiabilidade
+    \end{itemize}
+\end{itemize}
+
+\subsection{Sistemas Distribuídos}
+\begin{itemize}
+    \item Sistema fracamanete acoplados.
+    \begin{itemize}
+        \item Cada processador tem sua memória local.
+        \item Comunicação se dá por canais de transmissão.
+    \end{itemize}
+\end{itemize}
+
+\end{document}
